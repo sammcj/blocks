@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-34 -12.5 98 133.5" role="img" aria-label="tall-1x2 book-cloth (isometric mirror)">
+<title>tall-1x2 book-cloth (isometric mirror)</title>
+<polygon points="30,45 60,30 60,102 30,117" fill="#A34F33" stroke="#442115" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="30,45 -30,15 -30,87 30,117" fill="#C25E3D" stroke="#442115" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 -30,15 30,45 60,30" fill="#CC785C" stroke="#442115" stroke-width="0.6" stroke-linejoin="round"/>
+<ellipse cx="0" cy="15" rx="9" ry="4.5" fill="#C25E3D" stroke="#442115" stroke-width="0.6"/>
+<rect x="-9" y="11" width="18" height="4" fill="#C25E3D"/>
+<path d="M -9 11 L -9 15 M 9 11 L 9 15" fill="none" stroke="#442115" stroke-width="0.6"/>
+<ellipse cx="0" cy="11" rx="9" ry="4.5" fill="#DB9F8B" stroke="#442115" stroke-width="0.6"/>
+<ellipse cx="30" cy="30" rx="9" ry="4.5" fill="#C25E3D" stroke="#442115" stroke-width="0.6"/>
+<rect x="21" y="26" width="18" height="4" fill="#C25E3D"/>
+<path d="M 21 26 L 21 30 M 39 26 L 39 30" fill="none" stroke="#442115" stroke-width="0.6"/>
+<ellipse cx="30" cy="26" rx="9" ry="4.5" fill="#DB9F8B" stroke="#442115" stroke-width="0.6"/>
+</svg>

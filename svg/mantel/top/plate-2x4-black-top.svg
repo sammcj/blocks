@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 68 128" role="img" aria-label="plate-2x4 black (top-down)">
+<title>plate-2x4 black (top-down)</title>
+<rect x="0" y="0" width="60" height="120" rx="2" fill="#141820" stroke="#000000" stroke-width="0.6"/>
+<circle cx="15" cy="15" r="9" fill="#2B3240" stroke="#000000" stroke-width="0.6"/>
+<circle cx="15" cy="45" r="9" fill="#2B3240" stroke="#000000" stroke-width="0.6"/>
+<circle cx="15" cy="75" r="9" fill="#2B3240" stroke="#000000" stroke-width="0.6"/>
+<circle cx="15" cy="105" r="9" fill="#2B3240" stroke="#000000" stroke-width="0.6"/>
+<circle cx="45" cy="15" r="9" fill="#2B3240" stroke="#000000" stroke-width="0.6"/>
+<circle cx="45" cy="45" r="9" fill="#2B3240" stroke="#000000" stroke-width="0.6"/>
+<circle cx="45" cy="75" r="9" fill="#2B3240" stroke="#000000" stroke-width="0.6"/>
+<circle cx="45" cy="105" r="9" fill="#2B3240" stroke="#000000" stroke-width="0.6"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 -12.5 128 88.5" role="img" aria-label="tile-2x2 smoke (isometric)">
+<title>tile-2x2 smoke (isometric)</title>
+<polygon points="0,60 -60,30 -60,42 0,72" fill="#7D7D78" stroke="#2C2C2A" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,60 60,30 60,42 0,72" fill="#686864" stroke="#2C2C2A" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 60,30 0,60 -60,30" fill="#91918D" stroke="#2C2C2A" stroke-width="0.6" stroke-linejoin="round"/>
+</svg>

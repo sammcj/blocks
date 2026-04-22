@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 128 188" role="img" aria-label="brick-4x6 smoke (top-down)">
+<title>brick-4x6 smoke (top-down)</title>
+<rect x="0" y="0" width="120" height="180" rx="2" fill="#91918D" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="15" cy="15" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="15" cy="45" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="15" cy="75" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="15" cy="105" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="15" cy="135" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="15" cy="165" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="45" cy="15" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="45" cy="45" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="45" cy="75" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="45" cy="105" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="45" cy="135" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="45" cy="165" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="75" cy="15" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="75" cy="45" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="75" cy="75" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="75" cy="105" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="75" cy="135" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="75" cy="165" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="105" cy="15" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="105" cy="45" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="105" cy="75" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="105" cy="105" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="105" cy="135" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+<circle cx="105" cy="165" r="9" fill="#AFAFAC" stroke="#2C2C2A" stroke-width="0.6"/>
+</svg>

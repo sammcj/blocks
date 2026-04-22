@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 -12.5 188 118.5" role="img" aria-label="tile-2x4 book-cloth (isometric mirror)">
+<title>tile-2x4 book-cloth (isometric mirror)</title>
+<polygon points="60,90 120,60 120,72 60,102" fill="#A34F33" stroke="#442115" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="60,90 -60,30 -60,42 60,102" fill="#C25E3D" stroke="#442115" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 -60,30 60,90 120,60" fill="#CC785C" stroke="#442115" stroke-width="0.6" stroke-linejoin="round"/>
+</svg>

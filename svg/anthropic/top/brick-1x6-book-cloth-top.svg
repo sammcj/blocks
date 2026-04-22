@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 38 188" role="img" aria-label="brick-1x6 book-cloth (top-down)">
+<title>brick-1x6 book-cloth (top-down)</title>
+<rect x="0" y="0" width="30" height="180" rx="2" fill="#CC785C" stroke="#442115" stroke-width="0.6"/>
+<circle cx="15" cy="15" r="9" fill="#DB9F8B" stroke="#442115" stroke-width="0.6"/>
+<circle cx="15" cy="45" r="9" fill="#DB9F8B" stroke="#442115" stroke-width="0.6"/>
+<circle cx="15" cy="75" r="9" fill="#DB9F8B" stroke="#442115" stroke-width="0.6"/>
+<circle cx="15" cy="105" r="9" fill="#DB9F8B" stroke="#442115" stroke-width="0.6"/>
+<circle cx="15" cy="135" r="9" fill="#DB9F8B" stroke="#442115" stroke-width="0.6"/>
+<circle cx="15" cy="165" r="9" fill="#DB9F8B" stroke="#442115" stroke-width="0.6"/>
+</svg>

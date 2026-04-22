@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-94 -12.5 128 112.5" role="img" aria-label="brick-1x3 l-yellow (isometric)">
+<title>brick-1x3 l-yellow (isometric)</title>
+<polygon points="-60,60 -90,45 -90,81 -60,96" fill="#F0C311" stroke="#544405" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="-60,60 30,15 30,51 -60,96" fill="#CAA50D" stroke="#544405" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 30,15 -60,60 -90,45" fill="#F2CD37" stroke="#544405" stroke-width="0.6" stroke-linejoin="round"/>
+<ellipse cx="0" cy="15" rx="9" ry="4.5" fill="#F0C311" stroke="#544405" stroke-width="0.6"/>
+<rect x="-9" y="11" width="18" height="4" fill="#F0C311"/>
+<path d="M -9 11 L -9 15 M 9 11 L 9 15" fill="none" stroke="#544405" stroke-width="0.6"/>
+<ellipse cx="0" cy="11" rx="9" ry="4.5" fill="#F6DB70" stroke="#544405" stroke-width="0.6"/>
+<ellipse cx="-30" cy="30" rx="9" ry="4.5" fill="#F0C311" stroke="#544405" stroke-width="0.6"/>
+<rect x="-39" y="26" width="18" height="4" fill="#F0C311"/>
+<path d="M -39 26 L -39 30 M -21 26 L -21 30" fill="none" stroke="#544405" stroke-width="0.6"/>
+<ellipse cx="-30" cy="26" rx="9" ry="4.5" fill="#F6DB70" stroke="#544405" stroke-width="0.6"/>
+<ellipse cx="-60" cy="45" rx="9" ry="4.5" fill="#F0C311" stroke="#544405" stroke-width="0.6"/>
+<rect x="-69" y="41" width="18" height="4" fill="#F0C311"/>
+<path d="M -69 41 L -69 45 M -51 41 L -51 45" fill="none" stroke="#544405" stroke-width="0.6"/>
+<ellipse cx="-60" cy="41" rx="9" ry="4.5" fill="#F6DB70" stroke="#544405" stroke-width="0.6"/>
+</svg>

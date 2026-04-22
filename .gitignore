@@ -1,0 +1,14 @@
+# Un-ignore the generated decks even if a global gitignore excludes *.pptx.
+!*Bricks*.pptx
+!*Blocks*.pptx
+
+__pycache__/
+*.bak
+*.cache
+*.DS_Store
+*.egg-info/
+*.lock.*
+*.log
+*.tmp
+*.zip
+png/*

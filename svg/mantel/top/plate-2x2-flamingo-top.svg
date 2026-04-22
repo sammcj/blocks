@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 68 68" role="img" aria-label="plate-2x2 flamingo (top-down)">
+<title>plate-2x2 flamingo (top-down)</title>
+<rect x="0" y="0" width="60" height="60" rx="2" fill="#D86E89" stroke="#550E28" stroke-width="0.6"/>
+<circle cx="15" cy="15" r="9" fill="#E690A2" stroke="#550E28" stroke-width="0.6"/>
+<circle cx="15" cy="45" r="9" fill="#E690A2" stroke="#550E28" stroke-width="0.6"/>
+<circle cx="45" cy="15" r="9" fill="#E690A2" stroke="#550E28" stroke-width="0.6"/>
+<circle cx="45" cy="45" r="9" fill="#E690A2" stroke="#550E28" stroke-width="0.6"/>
+</svg>

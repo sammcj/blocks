@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-34 -12.5 68 58.5" role="img" aria-label="tile-1x1 kraft (isometric)">
+<title>tile-1x1 kraft (isometric)</title>
+<polygon points="0,30 -30,15 -30,27 0,42" fill="#CA8C60" stroke="#4C2E1A" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,30 30,15 30,27 0,42" fill="#BF7642" stroke="#4C2E1A" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 30,15 0,30 -30,15" fill="#D4A27F" stroke="#4C2E1A" stroke-width="0.6" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 -12.5 188 118.5" role="img" aria-label="tile-2x4 ocean (isometric mirror)">
+<title>tile-2x4 ocean (isometric mirror)</title>
+<polygon points="60,90 120,60 120,72 60,102" fill="#103D57" stroke="#042031" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="60,90 -60,30 -60,42 60,102" fill="#174E6E" stroke="#042031" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 -60,30 60,90 120,60" fill="#1E5E82" stroke="#042031" stroke-width="0.6" stroke-linejoin="round"/>
+</svg>

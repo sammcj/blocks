@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-34 -12.5 68 58.5" role="img" aria-label="tile-1x1 slate (isometric)">
+<title>tile-1x1 slate (isometric)</title>
+<polygon points="0,30 -30,15 -30,27 0,42" fill="#111111" stroke="#0D0D0D" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,30 30,15 30,27 0,42" fill="#000000" stroke="#0D0D0D" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 30,15 0,30 -30,15" fill="#262625" stroke="#0D0D0D" stroke-width="0.6" stroke-linejoin="round"/>
+</svg>

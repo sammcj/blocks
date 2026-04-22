@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 38 128" role="img" aria-label="plate-1x4 l-green (top-down)">
+<title>plate-1x4 l-green (top-down)</title>
+<rect x="0" y="0" width="30" height="120" rx="2" fill="#237841" stroke="#0B2414" stroke-width="0.6"/>
+<circle cx="15" cy="15" r="9" fill="#31A75B" stroke="#0B2414" stroke-width="0.6"/>
+<circle cx="15" cy="45" r="9" fill="#31A75B" stroke="#0B2414" stroke-width="0.6"/>
+<circle cx="15" cy="75" r="9" fill="#31A75B" stroke="#0B2414" stroke-width="0.6"/>
+<circle cx="15" cy="105" r="9" fill="#31A75B" stroke="#0B2414" stroke-width="0.6"/>
+</svg>

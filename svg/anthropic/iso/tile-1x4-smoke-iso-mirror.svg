@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-34 -12.5 158 103.5" role="img" aria-label="tile-1x4 smoke (isometric mirror)">
+<title>tile-1x4 smoke (isometric mirror)</title>
+<polygon points="90,75 120,60 120,72 90,87" fill="#686864" stroke="#2C2C2A" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="90,75 -30,15 -30,27 90,87" fill="#7D7D78" stroke="#2C2C2A" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 -30,15 90,75 120,60" fill="#91918D" stroke="#2C2C2A" stroke-width="0.6" stroke-linejoin="round"/>
+</svg>

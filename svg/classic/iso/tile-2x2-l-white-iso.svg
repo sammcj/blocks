@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 -12.5 128 88.5" role="img" aria-label="tile-2x2 l-white (isometric)">
+<title>tile-2x2 l-white (isometric)</title>
+<polygon points="0,60 -60,30 -60,42 0,72" fill="#E0E0E0" stroke="#333333" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,60 60,30 60,42 0,72" fill="#CBCBCB" stroke="#333333" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 60,30 0,60 -60,30" fill="#F4F4F4" stroke="#333333" stroke-width="0.6" stroke-linejoin="round"/>
+</svg>

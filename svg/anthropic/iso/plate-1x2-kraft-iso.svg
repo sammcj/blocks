@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 -12.5 98 73.5" role="img" aria-label="plate-1x2 kraft (isometric)">
+<title>plate-1x2 kraft (isometric)</title>
+<polygon points="-30,45 -60,30 -60,42 -30,57" fill="#CA8C60" stroke="#4C2E1A" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="-30,45 30,15 30,27 -30,57" fill="#BF7642" stroke="#4C2E1A" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 30,15 -30,45 -60,30" fill="#D4A27F" stroke="#4C2E1A" stroke-width="0.6" stroke-linejoin="round"/>
+<ellipse cx="0" cy="15" rx="9" ry="4.5" fill="#CA8C60" stroke="#4C2E1A" stroke-width="0.6"/>
+<rect x="-9" y="11" width="18" height="4" fill="#CA8C60"/>
+<path d="M -9 11 L -9 15 M 9 11 L 9 15" fill="none" stroke="#4C2E1A" stroke-width="0.6"/>
+<ellipse cx="0" cy="11" rx="9" ry="4.5" fill="#E3C3AD" stroke="#4C2E1A" stroke-width="0.6"/>
+<ellipse cx="-30" cy="30" rx="9" ry="4.5" fill="#CA8C60" stroke="#4C2E1A" stroke-width="0.6"/>
+<rect x="-39" y="26" width="18" height="4" fill="#CA8C60"/>
+<path d="M -39 26 L -39 30 M -21 26 L -21 30" fill="none" stroke="#4C2E1A" stroke-width="0.6"/>
+<ellipse cx="-30" cy="26" rx="9" ry="4.5" fill="#E3C3AD" stroke="#4C2E1A" stroke-width="0.6"/>
+</svg>

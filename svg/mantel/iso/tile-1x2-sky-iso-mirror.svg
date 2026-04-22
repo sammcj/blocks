@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-34 -12.5 98 73.5" role="img" aria-label="tile-1x2 sky (isometric mirror)">
+<title>tile-1x2 sky (isometric mirror)</title>
+<polygon points="30,45 60,30 60,42 30,57" fill="#329DD3" stroke="#064260" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="30,45 -30,15 -30,27 30,57" fill="#59BAE2" stroke="#064260" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 -30,15 30,45 60,30" fill="#81CCEA" stroke="#064260" stroke-width="0.6" stroke-linejoin="round"/>
+</svg>

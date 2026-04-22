@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-34 -12.5 68 58.5" role="img" aria-label="plate-1x1 grey (isometric)">
+<title>plate-1x1 grey (isometric)</title>
+<polygon points="0,30 -30,15 -30,27 0,42" fill="#515B66" stroke="#1A2028" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,30 30,15 30,27 0,42" fill="#3E4650" stroke="#1A2028" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 30,15 0,30 -30,15" fill="#64707C" stroke="#1A2028" stroke-width="0.6" stroke-linejoin="round"/>
+<ellipse cx="0" cy="15" rx="9" ry="4.5" fill="#515B66" stroke="#1A2028" stroke-width="0.6"/>
+<rect x="-9" y="11" width="18" height="4" fill="#515B66"/>
+<path d="M -9 11 L -9 15 M 9 11 L 9 15" fill="none" stroke="#1A2028" stroke-width="0.6"/>
+<ellipse cx="0" cy="11" rx="9" ry="4.5" fill="#8593A0" stroke="#1A2028" stroke-width="0.6"/>
+</svg>

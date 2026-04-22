@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-124 -12.5 158 103.5" role="img" aria-label="tile-1x4 sky (isometric)">
+<title>tile-1x4 sky (isometric)</title>
+<polygon points="-90,75 -120,60 -120,72 -90,87" fill="#59BAE2" stroke="#064260" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="-90,75 30,15 30,27 -90,87" fill="#329DD3" stroke="#064260" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 30,15 -90,75 -120,60" fill="#81CCEA" stroke="#064260" stroke-width="0.6" stroke-linejoin="round"/>
+</svg>

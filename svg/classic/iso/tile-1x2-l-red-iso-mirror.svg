@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-34 -12.5 98 73.5" role="img" aria-label="tile-1x2 l-red (isometric mirror)">
+<title>tile-1x2 l-red (isometric mirror)</title>
+<polygon points="30,45 60,30 60,42 30,57" fill="#7B1006" stroke="#3C0803" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="30,45 -30,15 -30,27 30,57" fill="#A21507" stroke="#3C0803" stroke-width="0.6" stroke-linejoin="round"/>
+<polygon points="0,0 -30,15 30,45 60,30" fill="#C91A09" stroke="#3C0803" stroke-width="0.6" stroke-linejoin="round"/>
+</svg>
