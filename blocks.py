@@ -380,6 +380,67 @@ def iso_viewbox(W: int, D: int, H_units: int,
     return (min_x - pad, min_y - pad, (max_x - min_x) + 2 * pad, (max_y - min_y) + 2 * pad)
 
 
+def _strip_bounds(W: int, D: int) -> tuple[float, float, float, float, float]:
+    """Geometry shared by `strip_iso_block` and `strip_iso_viewbox`.
+
+    Returns (slab_left, slab_right, slab_top_y, para_bot_y, front_bot_y).
+    """
+    slab_left = -2 * U
+    slab_right = W * U
+    slab_top_y = S - STUD_RY - STUD_RAISE - 2
+    para_bot_y = D * S + STUD_RY + 2
+    front_bot_y = para_bot_y + PLATE_H
+    return slab_left, slab_right, slab_top_y, para_bot_y, front_bot_y
+
+
+def strip_iso_block(W: int, D: int, palette: Palette) -> str:
+    """Flat horizontal "horizon" slab with iso-lattice studs.
+
+    Studs sit on the standard iso lattice (a*U, b*S where a+b is odd), the same
+    grid existing iso bricks use, so a brick placed on the slab snaps cleanly:
+    its front-most stud cell aligns with a slab stud and rear cells lift into
+    the air at the iso angle. The slab silhouette is a thin horizontal
+    rectangle — top face flat, front face flat — cropped to D visible stud rows
+    rather than the full iso parallelogram height.
+    """
+    p = palette
+    slab_left, slab_right, slab_top_y, para_bot_y, front_bot_y = _strip_bounds(W, D)
+
+    parts = [
+        poly(
+            [(slab_left, para_bot_y), (slab_right, para_bot_y),
+             (slab_right, front_bot_y), (slab_left, front_bot_y)],
+            p.left, p.outline,
+        ),
+        poly(
+            [(slab_left, slab_top_y), (slab_right, slab_top_y),
+             (slab_right, para_bot_y), (slab_left, para_bot_y)],
+            p.top, p.outline,
+        ),
+    ]
+    for b in range(1, D + 1):
+        for a in range(-2, W + 1):
+            if (a + b) % 2 == 0:
+                continue
+            cx = a * U
+            cy = b * S
+            if cx < slab_left or cx > slab_right:
+                continue
+            _stud(parts, cx, cy, p)
+    return "\n".join(parts)
+
+
+def strip_iso_viewbox(W: int, D: int,
+                      pad: int = 4) -> tuple[float, float, float, float]:
+    slab_left, slab_right, slab_top_y, _, front_bot_y = _strip_bounds(W, D)
+    return (
+        slab_left - pad,
+        slab_top_y - pad,
+        (slab_right - slab_left) + 2 * pad,
+        (front_bot_y - slab_top_y) + 2 * pad,
+    )
+
+
 # ---------- Broken (snapped-in-half) brick ----------
 # Each half is clipped from the full iso body, rotated about the break
 # midpoint so the snap end lifts (outer end drops), then translated outward
@@ -581,6 +642,7 @@ class BlockSpec:
     show_studs: bool = True
     slope: bool = False
     broken: bool = False  # render as snapped-in-half comic-style variant
+    strip: bool = False   # flat horizontal "horizon" baseplate (iso view only)
 
 
 STANDARD_BRICKS = [
@@ -652,23 +714,39 @@ BROKEN_PIECES = [
     BlockSpec("broken-plate-4x10", 4, 10, 1, broken=True),
 ]
 
+# Flat horizontal "horizon" baseplates. Iso view only — designed to sit at the
+# bottom of a slide with existing iso bricks placed on top. Studs follow the
+# standard iso lattice (a*U, b*S where a+b odd) so any iso brick docks on the
+# same grid. `D` here means visible stud-rows in screen depth, not iso cells —
+# the slab silhouette is forced to a thin horizontal rectangle. See
+# `strip_iso_block` for the geometry.
+STRIPS = [
+    BlockSpec("strip-32x2", 32, 2, 1, strip=True),
+    BlockSpec("strip-32x4", 32, 4, 1, strip=True),
+]
+
 
 def render_iso_svg(
     spec: BlockSpec, palette: Palette, mirror: bool = False,
     canvas: tuple[float, float] | None = None,
 ) -> str:
-    if spec.broken:
+    if spec.strip:
+        body = strip_iso_block(spec.W, spec.D, palette)
+        vb = strip_iso_viewbox(spec.W, spec.D)
+        kind = "strip"
+    elif spec.broken:
         body, vb = broken_iso_body(spec.W, spec.D, spec.H_units, palette,
                                    show_studs=spec.show_studs, mirror=mirror)
+        kind = "broken"
     else:
         body = iso_block(spec.W, spec.D, spec.H_units, palette,
                          show_studs=spec.show_studs, slope=spec.slope,
                          mirror=mirror)
         vb = iso_viewbox(spec.W, spec.D, spec.H_units, mirror=mirror)
+        kind = "isometric"
     if canvas is not None:
         vb = _centre_viewbox(vb, *canvas)
     facing = " mirror" if mirror else ""
-    kind = "broken" if spec.broken else "isometric"
     title = f"{spec.slug} {palette.name} ({kind}{facing})"
     return svg_doc(vb, body, title)
 
@@ -839,7 +917,7 @@ class _Placement:
 # they sort to the tail of the deck so the small bricks/slopes/tall/tiles/
 # small-plates don't end up orphaned next to giants they can't line up with.
 # Iso non-mirror separates from iso-mirror so same-facing pieces cluster.
-_PPTX_CATEGORY_ORDER = {"brick": 0, "broken": 1, "slope": 2, "tall": 3, "tile": 4, "plate": 5}
+_PPTX_CATEGORY_ORDER = {"brick": 0, "broken": 1, "slope": 2, "tall": 3, "tile": 4, "plate": 5, "strip": 6}
 _PPTX_VIEW_ORDER = {"iso": 0, "side": 1, "top": 2}
 _PPTX_SIZE_RE = re.compile(r"-(\d+)x(\d+)-")
 _BASEPLATE_MIN_AREA = 32  # W*D >= 32 matches the "Baseplates" comment in PLATES
@@ -858,6 +936,8 @@ def _pptx_parse(name: str) -> tuple[str, int, int]:
 
 def _is_baseplate(name: str) -> bool:
     category, w, d = _pptx_parse(name)
+    if category == "strip":
+        return True
     return category == "plate" and w * d >= _BASEPLATE_MIN_AREA
 
 
@@ -1174,8 +1254,9 @@ def _render_palette_set(
                 render_iso_svg(spec, palette, mirror=False, canvas=iso_canvas)
             )
             iso_count += 1
-            # Square blocks are symmetric under mirror; skip the duplicate.
-            if not skip_mirror and spec.W != spec.D:
+            # Square blocks are symmetric under mirror, and strip slabs are
+            # left-right symmetric by construction; skip the duplicate.
+            if not skip_mirror and spec.W != spec.D and not spec.strip:
                 (iso_dir / f"{spec.slug}-{pname}-iso-mirror.svg").write_text(
                     render_iso_svg(spec, palette, mirror=True, canvas=iso_canvas)
                 )
@@ -1287,9 +1368,9 @@ def main() -> None:
     out: Path = args.out
     out.mkdir(parents=True, exist_ok=True)
 
-    all_specs = STANDARD_BRICKS + BROKEN_PIECES + PLATES + TILES + TALL + SLOPES
+    all_specs = STANDARD_BRICKS + BROKEN_PIECES + PLATES + TILES + TALL + SLOPES + STRIPS
     flat_specs = [s for s in all_specs
-                  if not s.slope and not s.broken and s.H_units <= 3]
+                  if not s.slope and not s.broken and not s.strip and s.H_units <= 3]
     side_specs = dedupe_for_side(flat_specs)
 
     if args.uniform_canvas:
