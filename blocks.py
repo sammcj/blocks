@@ -424,7 +424,7 @@ def strip_iso_block(W: int, D: int, palette: Palette) -> str:
                 continue
             cx = a * U
             cy = b * S
-            if cx < slab_left or cx > slab_right:
+            if cx - STUD_RX < slab_left or cx + STUD_RX > slab_right:
                 continue
             _stud(parts, cx, cy, p)
     return "\n".join(parts)
